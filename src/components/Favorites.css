@@ -1,0 +1,220 @@
+.favorites {
+  padding: 6rem 0;
+  background-color: var(--color-charcoal);
+  position: relative; /* Ensure modal overlay is relative to screen but using fixed */
+}
+
+.favorites-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.favorites-header h2 {
+  font-size: 2.5rem;
+  color: var(--color-off-white);
+}
+
+.carousel-container {
+  overflow-x: hidden;
+  padding-left: 10%; 
+  /* padding-right: 10%; */
+  cursor: grab;
+}
+
+.carousel {
+  display: flex;
+  gap: 2rem;
+}
+
+.menu-card {
+  min-width: 350px;
+  max-width: 350px;
+  background-color: var(--color-navy);
+  border-radius: 8px; 
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+  user-select: none;
+  cursor: pointer; /* Clickable */
+}
+
+.card-image {
+  height: 450px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.menu-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.menu-card:hover .card-overlay {
+  opacity: 0.8;
+}
+
+.card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  z-index: 10;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  font-family: var(--font-serif);
+  color: var(--color-off-white);
+}
+
+.price {
+  color: var(--color-gold);
+  font-weight: 600;
+}
+
+.card-content p {
+  color: var(--color-grey);
+  font-size: 0.9rem;
+  opacity: 0.8;
+  transform: translateY(10px);
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.menu-card:hover .card-content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.85);
+  backdrop-filter: blur(5px);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.modal-content {
+  background-color: var(--color-navy);
+  border-radius: 8px;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+.close-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+  font-size: 1.2rem;
+}
+
+.close-btn:hover {
+  background: var(--color-coral);
+}
+
+.modal-image {
+  width: 50%;
+  height: 500px;
+}
+
+.modal-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.modal-details {
+  width: 50%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-details h3 {
+  font-size: 2.5rem;
+  font-family: var(--font-serif);
+  color: var(--color-off-white);
+  margin-bottom: 0.5rem;
+}
+
+.modal-price {
+  font-size: 1.5rem;
+  color: var(--color-gold);
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.modal-details p {
+  color: var(--color-grey);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 968px) {
+  .modal-content {
+    flex-direction: column;
+    max-width: 500px;
+  }
+  .modal-image {
+    width: 100%;
+    height: 300px;
+  }
+  .modal-details {
+    width: 100%;
+    padding: 2rem;
+  }
+  .modal-details h3 {
+    font-size: 2rem;
+  }
+}

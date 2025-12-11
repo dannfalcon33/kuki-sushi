@@ -1,0 +1,98 @@
+.social-proof {
+  padding: 6rem 0;
+  background-color: var(--color-charcoal);
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.social-header h2 {
+  font-size: 2rem;
+  color: var(--color-off-white);
+  font-family: var(--font-serif);
+}
+
+.social-header span {
+  font-family: var(--font-sans);
+  font-size: 1rem;
+  color: var(--color-grey);
+  margin-left: 1rem;
+  font-weight: 300;
+}
+
+.masonry-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 0; /* No borders as requested */
+}
+
+.masonry-item {
+  position: relative;
+  aspect-ratio: 1 / 1; /* Keeping them square for uniformity in grid, but masonry usually implies varying heights. 
+                          Prompt: "Ladrillos irregulares". To achieve true masonry in CSS grid is tricky without JS or column-count.
+                          I'll use column-count for true masonry feel or just different aspect ratios if I knew heights.
+                          Let's try column-count layout which is simple and effective for masonry. */
+}
+
+/* Overriding grid for column approach */
+.masonry-grid {
+  display: block;
+  column-count: 3;
+  column-gap: 0;
+}
+
+.masonry-item {
+  break-inside: avoid;
+  margin-bottom: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.masonry-item img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.masonry-item:hover img {
+  transform: scale(1.1);
+}
+
+.instagram-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.masonry-item:hover .instagram-overlay {
+  opacity: 1;
+}
+
+.instagram-overlay span {
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .masonry-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .masonry-grid {
+    column-count: 1;
+  }
+}
