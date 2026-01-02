@@ -1,19 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Montserrat:wght@300;400;500;600&display=swap");
 
 :root {
   /* Colors */
-  --color-charcoal: #1A1A1A;
-  --color-navy: #0F172A;
-  --color-coral: #FF7F50;
-  --color-gold: #D4AF37;
-  --color-off-white: #F8F8F8;
-  --color-grey: #A0A0A0;
+  --color-charcoal: #1a1a1a;
+  --color-navy: #0f172a;
+  --color-coral: #ff7f50;
+  --color-gold: #d4af37;
+  --color-off-white: #f8f8f8;
+  --color-grey: #a0a0a0;
   --color-black-trans: rgba(0, 0, 0, 0.8);
-  
+
   /* Fonts */
-  --font-serif: 'Cinzel Decorative', serif;
-  --font-sans: 'Montserrat', sans-serif;
-  
+  --font-serif: "Cinzel Decorative", serif;
+  --font-sans: "Montserrat", sans-serif;
+
   /* Spacing/Layout */
   --header-height: 80px;
 }
@@ -22,6 +22,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -33,7 +37,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-serif);
   font-weight: 700;
   line-height: 1.2;

@@ -51,7 +51,7 @@
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -80,4 +80,71 @@
 .btn-reserve:hover {
   background-color: #ff6b3d;
   transform: translateY(-2px);
+}
+
+/* Mobile Toggle */
+.mobile-toggle {
+  display: none;
+  font-size: 1.5rem;
+  color: var(--color-off-white);
+  background: none;
+  z-index: 1001; /* Ensure it's above menu */
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0; /* Cover full screen or slide from right? Code implies slide from right or full screen. Re-checking usage: x "100%" means slide from right. */
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--color-bg-dark); /* Fallback */
+  background-color: rgba(18, 18, 18, 0.98);
+  backdrop-filter: blur(10px);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.mobile-menu-header {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.close-btn {
+  font-size: 2rem;
+  color: var(--color-off-white);
+  background: none;
+}
+
+.mobile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.mobile-links a {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  color: var(--color-off-white);
+}
+
+.mobile-btn {
+  margin-top: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .desktop-only {
+    display: none;
+  }
+
+  .mobile-toggle {
+    display: block;
+  }
 }
