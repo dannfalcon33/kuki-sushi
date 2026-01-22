@@ -38,28 +38,22 @@ src/
 Esta landing page está diseñada para cautivar al usuario desde el primer segundo:
 
 1.  **Pantalla de Carga (Loader)**:
-
     - Al entrar, un loader elegante con el logo y una barra de progreso prepara los recursos, asegurando una transición suave al contenido principal.
 
 2.  **Hero Inmersivo con Carrusel GSAP**:
-
     - La sección principal presenta un carrusel animado dinámico impulsado por **GSAP**, rotando suavemente entre imágenes cinemáticas del restaurante y sus platos, con efectos de entrada de texto.
 
 3.  **Filosofía y Narrativa**:
-
     - Diseño de pantalla dividida que cuenta la historia de la marca y su conexión con el océano.
 
 4.  **Menú Interactivo**:
-
     - Carrusel "Drag-to-scroll" (arrastrar para desplazar) que destaca los platos de temporada con precios y descripciones.
 
 5.  **Sistema de Reservas Funcional**:
-
     - **Modal de Reserva**: Accesible desde el Navbar y la sección Omakase. Permite seleccionar fecha, hora y número de personas con validación de campos en tiempo real.
     - **Confirmación**: Un modal de agradecimiento ("Thank You Page") aparece tras una reserva exitosa.
 
 6.  **Navegación Responsiva**:
-
     - Totalmente adaptable a dispositivos móviles con un menú hamburguesa suave y superposición de pantalla completa.
     - **Scroll Suave**: Navegación fluida entre las diferentes secciones de la página.
 
@@ -86,10 +80,6 @@ Esta landing page está diseñada para cautivar al usuario desde el primer segun
     ```
 
 ---
-
-## Live Demo
-
-https://kukisushi.netlify.app/
 
 ## Sobre el Desarrollador 👨‍💻
 
