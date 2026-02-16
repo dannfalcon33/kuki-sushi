@@ -29,65 +29,65 @@ import social6 from "./assets/social-6.png";
 export const NAVBAR_CONTENT: NavbarContent = {
   brand: "KŪKI SUSHI",
   links: [
-    { label: "Menú", href: "#menu" },
-    { label: "Experiencia Omakase", href: "#omakase" },
-    { label: "Nosotros", href: "#about" },
-    { label: "Galería", href: "#gallery" },
+    { label: "Menu", href: "#menu" },
+    { label: "Omakase Experience", href: "#omakase" },
+    { label: "About Us", href: "#about" },
+    { label: "Gallery", href: "#gallery" },
   ],
-  cta: "Reservar Mesa",
+  cta: "Book a Table",
 };
 
 export const HERO_CONTENT: HeroContent = {
   title: "KŪKI SUSHI",
-  highlight: "Un Experiencia del Japón.",
+  highlight: "An Experience from Japan.",
   subtitle:
-    "Cocina Nikkei de autor y barra Omakase en el corazón de la ciudad. \nIngredientes traídos diariamente.",
-  ctaPrimary: "Ver Menú de Temporada",
-  ctaSecondary: "Ver Video Manifiesto",
+    "Signature Nikkei cuisine and Omakase bar in the heart of the city. \nIngredients brought in daily.",
+  ctaPrimary: "View Seasonal Menu",
+  ctaSecondary: "Watch Manifesto Video",
 };
 
 export const HERO_BG = heroBg;
 export const HERO_IMAGES = [heroBg, hero1, hero2, hero3, hero4];
 
 export const PHILOSOPHY_CONTENT: PhilosophyContent = {
-  preTitle: "NUESTRA ESENCIA",
-  title: "Del Océano al Alma.",
+  preTitle: "OUR ESSENCE",
+  title: "From the Ocean to the Soul.",
   description:
-    "En KŪKI, entendemos el sushi no como comida, sino como una conexión directa con la naturaleza. Nuestra pesca es sostenible, respetando los ciclos del mar. No solo servimos pescado, honramos su origen y la tradición milenaria de su preparación.",
-  baker: "Chef Ejecutivo",
+    "At KŪKI, we understand sushi not just as food, but as a direct connection with nature. Our fishing is sustainable, respecting the cycles of the sea. We don't just serve fish; we honor its origin and the ancient tradition of its preparation.",
+  baker: "Executive Chef",
   signature: "Kenji T.",
 };
 
 export const PHILOSOPHY_BG = philosophyBg;
 
 export const FAVORITES_CONTENT: FavoritesContent = {
-  title: "Curaduría de Temporada",
+  title: "Seasonal Curation",
   items: [
     {
       id: 1,
       title: "Toro & Gold Nigiri",
-      desc: "Ventresca de atún azul, caviar oscietra, pan de oro 24k.",
+      desc: "Bluefin tuna belly, oscietra caviar, 24k gold leaf.",
       price: "$18",
       image: card1,
     },
     {
       id: 2,
       title: "A5 Wagyu & Uni",
-      desc: "Wagyu Miyazaki A5 sellado, erizo de Hokkaido.",
+      desc: "Seared Miyazaki A5 Wagyu, Hokkaido sea urchin.",
       price: "$24",
       image: card2,
     },
     {
       id: 3,
       title: "Hotate Truffle",
-      desc: "Vieira gigante, trufa negra fresca, aceite de trufa blanca.",
+      desc: "Giant scallop, fresh black truffle, white truffle oil.",
       price: "$20",
       image: card3,
     },
     {
       id: 4,
       title: "Toro & Gold Nigiri",
-      desc: "Ventresca de atún azul, caviar oscietra, pan de oro 24k.",
+      desc: "Bluefin tuna belly, oscietra caviar, 24k gold leaf.",
       price: "$18",
       image: card1,
     },
@@ -95,16 +95,16 @@ export const FAVORITES_CONTENT: FavoritesContent = {
 };
 
 export const OMAKASE_CONTENT: OmakaseContent = {
-  title: "La Barra Omakase.",
+  title: "The Omakase Bar.",
   description:
-    "Déjate en manos del Chef. Una experiencia de 12 tiempos diseñada diariamente según la captura más fresca. Solo 8 asientos por turno.",
-  cta: "Solicitar Asiento Omakase",
+    "Leave it to the Chef. A 12-course experience designed daily based on the freshest catch. Only 8 seats per shift.",
+  cta: "Request Omakase Seat",
 };
 
 export const OMAKASE_BG = omakaseBg;
 
 export const SOCIAL_CONTENT: SocialContent = {
-  title: "KŪKI Vives",
+  title: "KŪKI Vibes",
   handle: "@kukisushi",
   images: [social1, social2, social3, social4, social5, social6],
 };
@@ -112,28 +112,28 @@ export const SOCIAL_CONTENT: SocialContent = {
 export const FOOTER_CONTENT: FooterContent = {
   brand: {
     name: "KŪKI",
-    tagline: "Redefiniendo la experiencia japonesa.",
+    tagline: "Redefining the Japanese experience.",
   },
   navigation: {
-    title: "Navegación",
+    title: "Navigation",
     links: [
-      { label: "Menú", href: "#menu" },
-      { label: "Reservas", href: "#reservations" },
-      { label: "Prensa", href: "#press" },
-      { label: "Carreras", href: "#careers" },
-      { label: "Privacidad", href: "#privacy" },
+      { label: "Menu", href: "#menu" },
+      { label: "Reservations", href: "#reservations" },
+      { label: "Press", href: "#press" },
+      { label: "Careers", href: "#careers" },
+      { label: "Privacy", href: "#privacy" },
     ],
   },
   contact: {
-    title: "Contacto",
+    title: "Contact",
     address: "La Hoyada Av. Fuerzas Armadas, Caracas Venezuela",
     phone: "+58 422 033 19 95",
     email: "kukisushi@gmail.com",
-    hours: "Lun - Dom: 10:00am - 11:00pm",
+    hours: "Mon - Sun: 10:00am - 11:00pm",
   },
   newsletter: {
-    title: "Únete al círculo",
-    placeholder: "Tu correo electrónico",
+    title: "Join the Circle",
+    placeholder: "Your email",
   },
-  copyright: "© 2026 KŪKI Sushi. Todos los derechos reservados.",
+  copyright: "© 2026 KŪKI Sushi. All rights reserved.",
 };

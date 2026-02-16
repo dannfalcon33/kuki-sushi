@@ -35,15 +35,15 @@ const ThankYouModal = ({ isOpen, onClose }: ThankYouModalProps) => {
               <FaCheckCircle className="success-icon" />
             </motion.div>
 
-            <h2>¡Reserva Exitosa!</h2>
+            <h2>Reservation Successful!</h2>
             <p className="modal-subtitle">
-              Gracias por elegir KŪKI Sushi.
+              Thank you for choosing KŪKI Sushi.
               <br />
-              Hemos enviado los detalles a tu correo electrónico.
+              We have sent the details to your email.
             </p>
 
             <button className="submit-btn" onClick={onClose}>
-              Volver al Inicio
+              Back to Home
             </button>
           </motion.div>
         </div>

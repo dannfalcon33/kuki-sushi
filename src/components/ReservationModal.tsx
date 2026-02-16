@@ -42,14 +42,14 @@ const ReservationModal = ({
 
   const validate = () => {
     const newErrors: Partial<FormData> = {};
-    if (!formData.name) newErrors.name = "El nombre es obligatorio.";
-    if (!formData.email) newErrors.email = "El correo es obligatorio.";
+    if (!formData.name) newErrors.name = "Name is required.";
+    if (!formData.email) newErrors.email = "Email is required.";
     else if (!/\S+@\S+\.\S+/.test(formData.email))
-      newErrors.email = "Correo inválido.";
-    if (!formData.phone) newErrors.phone = "El teléfono es obligatorio.";
-    if (!formData.date) newErrors.date = "Selecciona una fecha.";
-    if (!formData.time) newErrors.time = "Selecciona una hora.";
-    if (!formData.guests) newErrors.guests = "Indica el número de personas.";
+      newErrors.email = "Invalid email.";
+    if (!formData.phone) newErrors.phone = "Phone is required.";
+    if (!formData.date) newErrors.date = "Select a date.";
+    if (!formData.time) newErrors.time = "Select a time.";
+    if (!formData.guests) newErrors.guests = "Indicate the number of guests.";
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
@@ -87,9 +87,9 @@ const ReservationModal = ({
               <FaTimes />
             </button>
 
-            <h2>Reserva tu Experiencia</h2>
+            <h2>Book your Experience</h2>
             <p className="modal-subtitle">
-              Únete a nosotros para una velada inolvidable.
+              Join us for an unforgettable evening.
             </p>
 
             <form onSubmit={handleSubmit} className="reservation-form">
@@ -97,7 +97,7 @@ const ReservationModal = ({
                 <FaUser className="input-icon" />
                 <input
                   type="text"
-                  placeholder="Nombre Completo"
+                  placeholder="Full Name"
                   value={formData.name}
                   onChange={(e) =>
                     setFormData({ ...formData, name: e.target.value })
@@ -113,7 +113,7 @@ const ReservationModal = ({
                 <FaEnvelope className="input-icon" />
                 <input
                   type="email"
-                  placeholder="Correo Electrónico"
+                  placeholder="Email"
                   value={formData.email}
                   onChange={(e) =>
                     setFormData({ ...formData, email: e.target.value })
@@ -129,7 +129,7 @@ const ReservationModal = ({
                 <FaPhone className="input-icon" />
                 <input
                   type="tel"
-                  placeholder="Teléfono"
+                  placeholder="Phone"
                   value={formData.phone}
                   onChange={(e) =>
                     setFormData({ ...formData, phone: e.target.value })
@@ -166,7 +166,7 @@ const ReservationModal = ({
                     }
                     className={errors.time ? "error" : ""}
                   >
-                    <option value="">Hora</option>
+                    <option value="">Time</option>
                     <option value="18:00">18:00</option>
                     <option value="19:00">19:00</option>
                     <option value="20:00">20:00</option>
@@ -184,7 +184,7 @@ const ReservationModal = ({
                   type="number"
                   min="1"
                   max="10"
-                  placeholder="Número de Personas"
+                  placeholder="Number of Guests"
                   value={formData.guests}
                   onChange={(e) =>
                     setFormData({ ...formData, guests: e.target.value })
@@ -197,7 +197,7 @@ const ReservationModal = ({
               </div>
 
               <button type="submit" className="submit-btn">
-                Confirmar Reserva
+                Confirm Reservation
               </button>
             </form>
           </motion.div>
